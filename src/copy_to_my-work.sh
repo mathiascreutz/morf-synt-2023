@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "=========================================="
-echo "Copying over lab code to my-work directory"
-echo "=========================================="
+echo "=============================================="
+echo "Copying over lab code to the my-work directory"
+echo "=============================================="
 
 pushd . > /dev/null
 
