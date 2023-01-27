@@ -189,15 +189,21 @@ def load_lexicon(root, rules):
 def analyze(wordform):
     """ Analyze a word form through lookup """
     print("Analyze:", wordform)
-    for o in wordform2analysis[wordform]:
-        print("  ", o)
+    if wordform in wordform2analysis.keys():
+        for o in wordform2analysis[wordform]:
+            print("  ", o)
+    else:
+        print("  No matching words found.")
     print()
 
 def generate(analysis):
     """ Generate a word form through lookup """
     print("Generate:", analysis)
-    for o in analysis2wordform[analysis]:
-        print("  ", o)
+    if analysis in analysis2wordform.keys():
+        for o in analysis2wordform[analysis]:
+            print("  ", o)
+    else:
+        print("  No matching words found.")
     print()
 
 def analyze_all():
